@@ -79,3 +79,16 @@ The application will now be running. Open your web browser and navigate to **htt
 ## Contribution
 Contributions are welcome! If you have suggestions or improvements, feel free to fork the repository, make your changes, and submit a pull request.
 
+### To the Microsoft Community Team & MCP Server Creators,
+
+A huge **thank you** for creating and sharing the Microsoft Learn MCP Server! 🙏
+
+Your work on this powerful tool has opened up incredible new possibilities for developers looking to build intelligent applications on top of the Microsoft Learn platform. The ability to programmatically access the wealth of knowledge in the official documentation is a game-changer.
+
+We truly appreciate the effort, the clear documentation on GitHub, and your commitment to empowering the developer community. This project was a fantastic learning experience, and it wouldn't have been possible without your innovation.
+
+Keep up the amazing work! 🚀
+
+Best regards,
+
+A very curious and excited developer! 😊
