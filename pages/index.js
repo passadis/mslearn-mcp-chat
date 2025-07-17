@@ -2,6 +2,14 @@ import React, { useState, useRef, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 
+const isValidUrl = (url) => {
+    try {
+        const parsedUrl = new URL(url);
+        return parsedUrl.protocol === 'http:' || parsedUrl.protocol === 'https:';
+    } catch {
+        return false;
+    }
+};
 // Custom hook for communication with our own backend API route
 const useMcp = () => {
     const [isLoading, setIsLoading] = useState(false);
@@ -130,7 +138,7 @@ export default function ChatPage() {
             parts.push(
                 <a
                     key={`link-${match.index}`}
-                    href={match[2]}
+                    href={isValidUrl(match[2]) ? match[2] : '#'}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-400 hover:text-blue-300 underline font-medium bg-blue-500/10 px-1 py-0.5 rounded transition-colors"
