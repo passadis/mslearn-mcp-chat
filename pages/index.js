@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
+import DOMPurify from 'dompurify';
 
 const isValidUrl = (url) => {
     try {
@@ -138,7 +139,7 @@ export default function ChatPage() {
             parts.push(
                 <a
                     key={`link-${match.index}`}
-                    href={isValidUrl(match[2]) ? match[2] : '#'}
+                    href={isValidUrl(match[2]) ? DOMPurify.sanitize(match[2]) : '#'}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-400 hover:text-blue-300 underline font-medium bg-blue-500/10 px-1 py-0.5 rounded transition-colors"
