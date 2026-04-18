@@ -9,12 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "16.1.5",
+    "next": "16.2.3",
     "node-fetch": "^3.3.2",
     "postcss": "^8.5.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "dompurify": "^3.2.6"
+    "dompurify": "^3.4.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
